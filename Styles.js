@@ -28,23 +28,39 @@ export const styles = StyleSheet.create({
     },
 
     helpButtonContainer: {
-      //position: 'absolute',
+      position: 'absolute',
       flexDirection: 'row', // 아이콘과 텍스트를 가로로 배열하기 위해 설정
       alignItems: 'center', // 세로 가운데 정렬
-      position: 'relative', // 부모 요소에 상대적인 위치를 설정
+      //position: 'relative', // 부모 요소에 상대적인 위치를 설정
       alignSelf: 'flex-end', // 오른쪽 끝으로 이동
-      bottom:37,
+      top:5,
       right:5
     },
     helpIcon: {
-      width: 16, // 아이콘의 너비 설정
-      height:16, // 아이콘의 높이 설정
+      width: 20, // 아이콘의 너비 설정
+      height:20, // 아이콘의 높이 설정
       marginRight: 5, // 아이콘과 텍스트 사이의 간격 조절
+      top:5,
     },
     helpButtonText: {
-      bottom:0,
-      fontSize: 16.5, // 텍스트의 크기 설정
+      top:5,
+      fontSize: 24, // 텍스트의 크기 설정
       // 다른 텍스트 스타일들...
+    },
+    clearButton: {
+      //position: 'absolute',
+      right: -165,
+      padding:20,
+      top: -9,
+      zIndex: 1,
+    },
+    clearButtonImage: {
+      width: 40, // 원하는 너비
+      height: 40, // 원하는 높이
+      zIndex: 1,
+      top: -9,
+      right: -165,
+      opacity: 0.7, // 비활성화 상태일 때 투명도 조절
     },
 
     container: {
@@ -61,29 +77,11 @@ export const styles = StyleSheet.create({
       borderColor: '#ccc',
       borderRadius: 5,
       paddingHorizontal: 10,
-      marginTop:-100,
+      marginTop:-80,
       marginBottom: 10,
       top:0
     },
-    clearButton: {
-      //position: 'absolute',
-      
-      right: -165,
-      padding:20,
-      top: -19,
-      zIndex: 1,
-
-      
-    },
-    
-    clearButtonImage: {
-      width: 40, // 원하는 너비
-      height: 40, // 원하는 높이
-      zIndex: 1,
-      top: -19,
-      right: -165,
-      opacity: 0.7, // 비활성화 상태일 때 투명도 조절
-    },
+   
 
     clearButtonDisabled: {
       opacity: 0, // 비활성화 상태일 때 투명도 조절
