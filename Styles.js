@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     },
     clearButton: {
       //position: 'absolute',
-      right: -320,
+      right: -300,
       padding:0,
       top: -5,
       zIndex: 1,
