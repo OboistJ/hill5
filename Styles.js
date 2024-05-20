@@ -6,8 +6,8 @@ const windowHeight = Dimensions.get('window').height;
 export const styles = StyleSheet.create({
     
     title: {
-      top:0.5,
-      left:40,
+      top:-2.7,
+      left:50,
       fontSize: 24,
       fontWeight: 'bold',
       marginBottom: 10,
@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
 
     menuButtonContainer: {
       position: 'absolute',
-      top: 11,
+      top: 10.5,
       left: 10,
       marginBottom: 20,
     },
@@ -33,33 +33,33 @@ export const styles = StyleSheet.create({
       alignItems: 'center', // 세로 가운데 정렬
       //position: 'relative', // 부모 요소에 상대적인 위치를 설정
       alignSelf: 'flex-end', // 오른쪽 끝으로 이동
-      top:5,
-      right:5
+      top:11,
+      right:10
     },
     helpIcon: {
-      width: 20, // 아이콘의 너비 설정
-      height:20, // 아이콘의 높이 설정
+      width: 15, // 아이콘의 너비 설정
+      height:15, // 아이콘의 높이 설정
       marginRight: 5, // 아이콘과 텍스트 사이의 간격 조절
       top:5,
     },
     helpButtonText: {
-      top:5,
-      fontSize: 24, // 텍스트의 크기 설정
+      top:2,
+      fontSize: 18, // 텍스트의 크기 설정
       // 다른 텍스트 스타일들...
     },
     clearButton: {
       //position: 'absolute',
-      right: -165,
-      padding:20,
-      top: -9,
+      right: -320,
+      padding:0,
+      top: -5,
       zIndex: 1,
     },
     clearButtonImage: {
       width: 40, // 원하는 너비
       height: 40, // 원하는 높이
       zIndex: 1,
-      top: -9,
-      right: -165,
+      top: 6,
+      right: 0,
       opacity: 0.7, // 비활성화 상태일 때 투명도 조절
     },
 
@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
       borderColor: '#ccc',
       borderRadius: 5,
       paddingHorizontal: 10,
-      marginTop:-80,
+      marginTop:-40,
       marginBottom: 10,
       top:0
     },
@@ -95,7 +95,7 @@ export const styles = StyleSheet.create({
       height: 50,
     },
     itemName: {
-      top: 0-5, // 이미지의 중앙에 위치하도록 설정
+      top: 0, // 이미지의 중앙에 위치하도록 설정
       fontSize: 16,
     },
     itemName2: {
@@ -324,6 +324,7 @@ export const styles = StyleSheet.create({
       marginBottom: 10
     },
     buttonText: {
+      top:-2.5,
       fontSize: 20,
     },
     // 기존 스타일 ...
