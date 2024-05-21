@@ -49,7 +49,8 @@ export const styles = StyleSheet.create({
     },
     clearButton: {
       //position: 'absolute',
-      right: -350,
+      right: 0,
+      alignSelf: 'flex-end', // 오른쪽 끝으로 이동
       padding:0,
       top: -5,
       zIndex: 1,
@@ -114,13 +115,13 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
     },
     image: {
-      marginTop:-40,
+      marginTop:-45,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
       height: windowHeight * 0.85, // 이미지가 화면의 70%를 차지하도록 설정
       resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
     },
     image2: {
-      top:-310,
+      top:-300,
       marginTop:-50,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
       height: windowHeight * 0.874, // 이미지가 화면의 70%를 차지하도록 설정
@@ -128,8 +129,8 @@ export const styles = StyleSheet.create({
     },
 
     image3: {
-      top:-310,
-      marginTop:-40,
+      top:-300,
+      marginTop:-44,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
       height: windowHeight * 0.874, // 이미지가 화면의 70%를 차지하도록 설정
       resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
@@ -305,7 +306,7 @@ export const styles = StyleSheet.create({
       fontWeight: 'bold', // 텍스트를 굵게
     },
     modalText1:{
-    fontSize:16,
+    fontSize:14,
     textAlign: 'center', // 텍스트를 가운데 정렬
     },
     heading: {

@@ -1188,7 +1188,7 @@ useFocusEffect(
           ))}
           </ReactNativeZoomableView>
           
-          <View style={{ marginTop:-20, flex: 1, alignItems: 'center', justifyContent: 'center' ,top:images.length > 1 ? -height*0.845 : -5}}>
+          <View style={{ marginTop:-8, flex: 1, alignItems: 'center', justifyContent: 'center' ,top:images.length > 1 ? -height*0.845 : -5}}>
          
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center',marginLeft:25 ,bottom:5}}>
       <Text>{formatTime(playbackPosition)} / {formatTime(playbackDuration)}</Text>
