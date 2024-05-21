@@ -780,7 +780,7 @@ const renderScene = ({ route }) => {
           initialZoom={images.length > 1 ? 1: 1} // 초기 줌 배율
           bindToBorders={true}
           contentHeight={images.length > 1 ? height*2.4 : undefined}
-          initialOffsetY={images.length > 1 ? setY2: 1}
+          initialOffsetY={images.length > 1 ? setY: 1}
             >
           {images.map((image, index) => (
             <Image key={index} source={image} style={images.length > 1 ? styles.image2 : styles.image} />
