@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     },
     clearButton: {
       //position: 'absolute',
-      right: -320,
+      right: -350,
       padding:0,
       top: -5,
       zIndex: 1,
@@ -114,18 +114,27 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
     },
     image: {
-      marginTop:-18,
+      marginTop:-40,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
-      height: windowHeight * 0.8, // 이미지가 화면의 70%를 차지하도록 설정
+      height: windowHeight * 0.85, // 이미지가 화면의 70%를 차지하도록 설정
       resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
     },
     image2: {
       top:-310,
-      marginTop:0,
+      marginTop:-50,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
-      height: windowHeight * 0.8, // 이미지가 화면의 70%를 차지하도록 설정
+      height: windowHeight * 0.874, // 이미지가 화면의 70%를 차지하도록 설정
       resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
     },
+
+    image3: {
+      top:-310,
+      marginTop:-40,
+      width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
+      height: windowHeight * 0.874, // 이미지가 화면의 70%를 차지하도록 설정
+      resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
+    },
+    
     
     
    
