@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "test04",
+    "name": "언덕위의찬송",
     "slug": "test03",
     "version": "13.0.1",
     "orientation": "portrait",
@@ -32,6 +32,9 @@
         "projectId": "cfd69bb2-9ea2-46a9-bd5c-d767f472f2e4"
       }
     },
-    "owner": "shinjuan"
+    "owner": "shinjuan",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
