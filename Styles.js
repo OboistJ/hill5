@@ -49,10 +49,10 @@ export const styles = StyleSheet.create({
     },
     clearButton: {
       //position: 'absolute',
-      right: 0,
+      right: 2,
       alignSelf: 'flex-end', // 오른쪽 끝으로 이동
       padding:0,
-      top: -5,
+      top: -4,
       zIndex: 1,
     },
     clearButtonImage: {
@@ -115,25 +115,33 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
     },
     image: {
-      marginTop:-45,
+      top:0,
+      marginTop:-50,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
       height: windowHeight * 0.85, // 이미지가 화면의 70%를 차지하도록 설정
       resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
     },
     image2: {
-      top:-300,
-      marginTop:-50,
+      top:-290,
+      marginTop:-36,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
-      height: windowHeight * 0.874, // 이미지가 화면의 70%를 차지하도록 설정
+      height: windowHeight * 0.85, // 이미지가 화면의 70%를 차지하도록 설정
       resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
     },
 
     image3: {
-      top:-300,
-      marginTop:-44,
+      top:0,
+      marginTop:-65,
       width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
-      height: windowHeight * 0.874, // 이미지가 화면의 70%를 차지하도록 설정
+      height: windowHeight * 0.85, // 이미지가 화면의 70%를 차지하도록 설정
       resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
+    },
+      image4: {
+        top:-290,
+        marginTop:-27,
+        width: '100%', // 이미지를 화면에 꽉 차도록 넓이 설정
+        height: windowHeight * 0.85, // 이미지가 화면의 70%를 차지하도록 설정
+        resizeMode: 'contain', // 이미지가 화면에 꽉 차도록 조절
     },
     
     
