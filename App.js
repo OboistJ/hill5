@@ -368,17 +368,16 @@ useEffect(() => {
 
   return (
     <View style={styles.container}>
-      <View style={{ }}>
-      <View style={styles.menuButtonContainer}>
-  <TouchableOpacity onPress={openModal}>
-    <Text style={styles.menuButtonText}>☰</Text>
-  </TouchableOpacity>
-</View>
+      <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 10 }}>
+      <View style={{ flexDirection: 'row',  }}>
+        <TouchableOpacity onPress={openModal}>
+          <Text style={styles.menuButtonText}>☰</Text>
+        </TouchableOpacity>
         <Text style={styles.title}>찬송 목록</Text>
-        <TouchableOpacity onPress={openModal2} style={styles.helpButtonContainer}>
-  <Image source={require('./images/Help.png')} style={styles.helpIcon} />
-  <Text style={styles.helpButtonText}>도움말</Text>
-</TouchableOpacity>
+      </View>
+      <TouchableOpacity onPress={openModal2}>
+        <Text style={styles.helpButtonText}>ⓘ 도움말</Text>
+      </TouchableOpacity>
     </View>
 
       {/* 모달 컴포넌트 추가 */}
@@ -461,7 +460,7 @@ useEffect(() => {
 };
 
 const { width, height } = Dimensions.get('window');
-setY = height * 0.39
+setY = height * 0.38
 
 const ImageDetailScreen = ({ route,navigation }) => {
   const { imageName } = route.params;
@@ -783,11 +782,11 @@ const renderScene = ({ route }) => {
           initialOffsetY={images.length > 1 ? setY: 1}
             >
           {images.map((image, index) => (
-            <Image key={index} source={image} style={images.length > 1 ? styles.image2 : styles.image} />
+            <Image key={index} source={image} style={images.length > 1 ? styles.image4 : styles.image3} />
           ))}
           </ReactNativeZoomableView>
           
-          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,top:images.length > 1 ? -height*0.83 : -4.8}}>
+          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,top:images.length > 1 ? -height*0.857 : -height*0.034}}>
          
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center',marginLeft:25 ,bottom:5}}>
       <Text>{formatTime(playbackPosition)} / {formatTime(playbackDuration)}</Text>
@@ -1188,7 +1187,7 @@ useFocusEffect(
           ))}
           </ReactNativeZoomableView>
           
-          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,top:images.length > 1 ? -height*0.85 : -5}}>
+          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,top:images.length > 1 ? -height*0.857 : -height*0.034}}>
          
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center',marginLeft:25 ,bottom:5}}>
       <Text>{formatTime(playbackPosition)} / {formatTime(playbackDuration)}</Text>
